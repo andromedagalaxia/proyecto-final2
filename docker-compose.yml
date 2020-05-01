@@ -18,7 +18,7 @@ services:
             dockerfile: Dockerfile
         restart: always
         environment:
-            - VIRTUAL_HOST=app.lupita.com
+            - VIRTUAL_HOST=app.midominio.com
     node-api:
         container_name: 'Node-API'
         build:
@@ -28,4 +28,4 @@ services:
         ports:
             - '5000:5000'
         environment:
-            - VIRTUAL_HOST=api.lupita.com
+            - VIRTUAL_HOST=api.midominio.com
